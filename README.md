@@ -27,3 +27,22 @@ This repository provides a working example of creating and deploying a custom la
 Run the `train.py` script to fine-tune the Llama 3 model on your dataset:
 ```bash
 python train.py
+
+## Deploying the Model
+
+Run the app.py script to start a Flask API for your model:
+
+```bash
+python app.py
+```
+
+You can now send POST requests to http://0.0.0.0:5000/predict with a JSON payload containing the text you want to generate predictions for.
+
+# Example Request
+```bash
+curl -X POST http://0.0.0.0:5000/predict -H "Content-Type: application/json" -d '{"text":"Your input text here"}'
+```
+# Files
+train.py: Script to fine-tune the Llama 3 model.
+app.py: Script to deploy the fine-tuned model using Flask.
+data/: Directory to store training and testing data.
