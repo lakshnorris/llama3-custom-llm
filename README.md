@@ -46,3 +46,7 @@ curl -X POST http://0.0.0.0:5000/predict -H "Content-Type: application/json" -d 
 train.py: Script to fine-tune the Llama 3 model.
 app.py: Script to deploy the fine-tuned model using Flask.
 data/: Directory to store training and testing data.
+
+# Medium Article
+
+https://medium.com/@lakshnorris/creating-a-custom-language-model-with-llama-3-a-working-example-a3f84e0fbf85
